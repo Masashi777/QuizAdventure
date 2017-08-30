@@ -1,4 +1,4 @@
-package com.lifeistech.android.myapp2;
+package com.lifeistech.android.QuizAdventure;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

@@ -7,4 +7,11 @@
         また10問以内にモンスターを倒さないとゲームオーバーになっちゃうよ\n
         クリア目指して頑張ろう！\n
     </string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+
+    <string name="title_activity_fullscreen_2">FullscreenActivity_2</string>
+
 </resources>

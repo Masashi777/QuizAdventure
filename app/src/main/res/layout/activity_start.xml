@@ -1,95 +1,92 @@
-<RelativeLayout
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.lifeistech.android.myapp2.StartActivity">
+    tools:context="com.lifeistech.android.QuizAdventure.StartActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:paddingTop="-100dp"
-        android:paddingBottom="-100dp">
+    <ImageView
+        android:id="@+id/backImage"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView"
-            android:src="@mipmap/back"
-            android:scaleType="centerCrop" />
-    </FrameLayout>
+    <ImageView
+        android:id="@+id/title"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="3"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title"
+        app:layout_constraintTop_toTopOf="@+id/backImage"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="160dp"
+        app:layout_constraintBottom_toTopOf="@+id/ruleBtn" />
 
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+    <ImageButton
+        android:id="@+id/startBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.7"
+        android:background="@drawable/frame_style"
+        android:padding="19dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/start"
+        app:layout_constraintBottom_toTopOf="@+id/ruleBtn"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1">
+    <ImageButton
+        android:id="@+id/ruleBtn"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:alpha="0.7"
+        android:background="@drawable/frame_style"
+        android:padding="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/rule"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/title"
-                android:layout_marginBottom="70dp"
-                android:layout_weight="3"
-                android:src="@drawable/title"
-                android:scaleType="fitCenter"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:paddingLeft="10dp"
-                android:paddingRight="10dp" />
-        </LinearLayout>
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.03"
+        android:gravity="center"
+        android:text="(c) 2016 Masashi Hamaguchi"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="@+id/backImage"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginLeft="16dp"
+        app:layout_constraintLeft_toLeftOf="parent" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:orientation="vertical">
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/Button"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:layout_marginBottom="30dp"
-                android:background="@drawable/frame_style"
-                android:alpha="0.7"
-                android:onClick="click"
-                android:src="@drawable/start"
-                android:scaleType="fitCenter"
-                android:padding="19dp" />
-
-            <ImageButton
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:id="@+id/Button"
-                android:layout_marginLeft="20dp"
-                android:layout_marginRight="20dp"
-                android:background="@drawable/frame_style"
-                android:onClick="ruleclick"
-                android:src="@drawable/rule"
-                android:scaleType="fitCenter"
-                android:padding="20dp"
-                android:alpha="0.7" />
-
-        </LinearLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="(c) 2016 Masashi Hamaguchi"
-            android:id="@+id/textView5"
-            android:textColor="#ffffff"
-            android:gravity="center"
-            android:layout_marginBottom="10dp"
-            android:textSize="15sp"
-            android:layout_weight="0.03" />
-    </LinearLayout>
-
-</RelativeLayout>
+</android.support.constraint.ConstraintLayout>

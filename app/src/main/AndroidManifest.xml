@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.lifeistech.android.myapp2">
+    package="com.lifeistech.android.QuizAdventure">
 
     <application
         android:allowBackup="true"
@@ -15,10 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".GameoverActivity"/>
-        <activity android:name=".ResultActivity"/>
-        <activity android:name=".rule"/>
+        <activity android:name=".RuleActivity"/>
         <activity android:name=".MainActivity"/>
+        <activity android:name=".ResultActivity"/>
     </application>
 
 </manifest>
