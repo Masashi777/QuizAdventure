@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
 
     // TODO Layout
     // ImageView
-    private ImageView monsterImage;
+    private ImageView monsterImage, backImage;
     // TextView
     private TextView monsterNameText, monsterHpText, attackNumText, questionText, myHpText, statusText;
     // AnswerButton
@@ -86,6 +86,9 @@ public class MainActivity extends Activity {
         statusText = (TextView) findViewById(R.id.statusText);
 
         monsterImage = (ImageView) findViewById(R.id.monster_image);
+        backImage = (ImageView) findViewById(R.id.backImage);
+
+        backImage.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         ansBtn1 = (Button) findViewById(R.id.ansBtn1);
         ansBtn2 = (Button) findViewById(R.id.ansBtn2);

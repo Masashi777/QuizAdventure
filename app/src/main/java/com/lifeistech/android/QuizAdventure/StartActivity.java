@@ -32,6 +32,8 @@ public class StartActivity extends Activity {
 
         startBtn.setOnClickListener(MyClickListener);
         ruleBtn.setOnClickListener(MyClickListener);
+
+        backImage.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
     }
 
     private View.OnClickListener MyClickListener = new View.OnClickListener() {

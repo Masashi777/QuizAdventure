@@ -3,6 +3,7 @@ package com.lifeistech.android.QuizAdventure;
 import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Typeface;
+import android.media.Image;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Window;
@@ -20,7 +21,7 @@ public class ResultActivity extends Activity {
      */
 
     private TextView textView, textView2;
-    private ImageView imageView;
+    private ImageView imageView, backImage;
     private ImageButton imageButton;
 
     private boolean result;
@@ -38,7 +39,10 @@ public class ResultActivity extends Activity {
         textView = (TextView) findViewById(R.id.textView);
         textView2 = (TextView) findViewById(R.id.textView2);
         imageView = (ImageView) findViewById(R.id.imageView);
+        backImage = (ImageView) findViewById(R.id.backImage);
         imageButton = (ImageButton) findViewById(R.id.imageButton);
+
+        backImage.setLayerType(View.LAYER_TYPE_SOFTWARE, null);
 
         // 結果を受け取る
         Intent intent = getIntent();

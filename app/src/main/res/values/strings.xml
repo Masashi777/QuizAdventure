@@ -1,11 +1,11 @@
 <resources>
     <string name="app_name">クイズでぼうけん</string>
-    <string name="ruletext">\nルールは簡単！\n
-        問題に答えてモンスターを倒そう！\n
-        クイズに正解するとモンスターに攻撃を与えられるよ\n
-        もし間違えると自分のHPが減ってしまうよ\n
-        また10問以内にモンスターを倒さないとゲームオーバーになっちゃうよ\n
-        クリア目指して頑張ろう！\n
+    <string name="ruletext">\nルールはかんたん！\n
+        もんだいにこたえてモンスターをたおそう！\n
+        クイズにせいかいするとモンスターをこうげきできるよ\n
+        もしまちがえるとじぶんのHPがへってしまうよ\n
+        10もんいないにモンスターをたおさないとゲームオーバーになっちゃうよ\n
+        クリアめざしてがんばろう！\n
     </string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
